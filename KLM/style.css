@@ -1,0 +1,509 @@
+/* ===============================REMOVE STANDARD ELEMENTS =============================================*/
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* ========================================== GLOBAL ELEMENTS ===========================================*/
+body {
+  margin: 0;
+  font-family: sans-serif;
+  height: 100%;
+}
+
+/* ======================================== HEADER ELEMENTS =============================================*/
+header {
+  border-bottom: #000000 2px solid;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffffff;
+}
+
+.logo {
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 20px;
+}
+.logo img {
+  width: auto;
+  height: 8vh;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 35%;
+}
+.nav-links li {
+  list-style: none;
+}
+.nav-links a {
+  color: #000000;
+  text-decoration: none;
+  letter-spacing: 0px;
+}
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: #000000;
+  margin: 5px;
+}
+
+/*================== CHANGE COLOUR OF LINKS ===================*/
+
+/* link css overide */
+header .highlight,
+header .current a {
+  color: blue;
+}
+
+header a:hover {
+  color: red;
+}
+
+/* ===================================== MEDIA SCREEN CHANGE ELEMENTS ==============================================*/
+
+@media screen and (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+
+  .nav-links {
+    position: absolute;
+    right: 0px;
+    height: 85vh;
+    top: 8vh;
+    border-left: #000000 2px solid;
+    border-top: #000000 2px solid;
+    border-bottom: #000000 2px solid;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+    -moz-transition: transform 0.3s ease-in;
+    -webkit-transition: transform 0.3s ease-in;
+    -o-transition: transform 0.3s ease-in;
+  }
+  .nav-links li {
+    opacity: 0;
+  }
+  .burger {
+    display: block;
+  }
+  .burger div {
+    width: 22px;
+    height: 2px;
+    background-color: #000000;
+    margin: 4px;
+    transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+  }
+  .boxrow {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .article1 {
+    width: 95%;
+  }
+
+  .textboxwrap {
+    margin: 0px 5px 0px 5px;
+  }
+
+  .servicestext {
+    margin-top: 15px;
+  }
+  .linkboxrow {
+    flex-wrap: wrap;
+  }
+  .weddingboxrow {
+    flex-wrap: wrap;
+  }
+}
+
+.weddingboxrow {
+}
+/* =========== ACTIVATE NAV MUST BE AFTER MEDIA SCREEN ================*/
+.nav-active {
+  transform: translateX(0%);
+  transition: transform 0.3s ease-in;
+  visibility: visible;
+}
+
+/* ================= ANIMATION IN BURGER MENU ===================== */
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+.toggle .line1 {
+  transform: rotate(45deg) translate(3px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(-45deg) translate(3px, -6px);
+}
+
+/* ====================================================== INDEX PAGE CONTENT ============================================*/
+
+/* ==================== HERO IMAGE SECTION CSS===================== */
+
+.hero {
+  /* Sizing */
+  width: 100%;
+  height: 40vh;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  /* Text styles */
+  text-align: center;
+  color: white;
+
+  /* Background styles */
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./img/weddingflower1.jpg');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.hero h1 {
+  /* Text styles */
+  font-size: 40px;
+  /* Margins */
+  margin-top: 0;
+  margin-bottom: 0.5em;
+}
+
+.hero .btn {
+  /* Positioning and sizing */
+  display: block;
+  width: 200px;
+
+  /* Padding and margins */
+  padding: 1em;
+  margin-top: 50px;
+  margin-left: auto;
+  margin-right: auto;
+
+  /* Text styles */
+  color: white;
+  text-decoration: none;
+  font-size: 1em;
+
+  /* Border styles */
+  border: 3px solid white;
+  border-radius: 10px;
+}
+
+/* =============INDEX PAGE CONTENT ====================*/
+
+.article1 {
+  /* Sizing */
+  width: 80%;
+  padding-top: 30px;
+
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+
+  /* Text styles */
+  text-align: center;
+  color: #000000;
+}
+
+.textboxwrap {
+  /* Flexbox stuff */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 750px;
+}
+/* ============ SERVICES BOX ================*/
+
+.serviceswrap {
+  font-family: 'Roboto', sans-serif;
+}
+
+.servicestext {
+  background: #c7c5bf;
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 300px;
+  color: #ffffff;
+}
+.servicestext h1 {
+  padding-bottom: 15px;
+}
+.servicestext li {
+  padding: 4px;
+  list-style: none;
+}
+
+/*=================== TEXT BOXES ===============*/
+
+.textboxwrap h1 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.textboxwrap p {
+  margin-bottom: 10px;
+}
+
+/* ================== LINK BOXES ====================*/
+
+.linkboxrow {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.linkboxes {
+  padding: 20px;
+  background: #e6e6e6;
+}
+
+.linkbox {
+  padding: 15px;
+  text-align: center;
+}
+
+.linkbox img {
+  max-width: 100%;
+  min-width: 250px;
+  margin-bottom: 0px;
+  border: #c7c5bf 7px solid;
+  margin-bottom: 15px;
+}
+
+.linkbox li {
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.linkbox a {
+  background: #c7c5bf;
+  padding: 10px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.linkbox a:hover {
+  color: red;
+}
+
+/*========================================== WEDDING PAGE CONTENT ========================================*/
+
+.weddingtitle {
+  background: #e6e6e6;
+}
+.weddingtitle h1 {
+  padding: 15px;
+  color: #000000;
+}
+
+.weddingboxrow {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.weddingboxes {
+  padding: 30px;
+  background: #e6e6e6;
+}
+
+.weddingbox {
+  width: 50%;
+  min-width: 400px;
+}
+
+.weddingbox img {
+  margin-bottom: 10px;
+  border: #c7c5bf 5px solid;
+  width: 125px;
+}
+
+.weddingbox li {
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+}
+
+.weddingbox a {
+  background: #e6e6e6;
+  padding: 15px;
+  border-radius: 3px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.weddingbox p {
+  padding: 10px;
+}
+
+.weddingbox h3 {
+  padding: 10px;
+}
+
+/*========================= WREATHS PAGE CONTENT ============================*/
+
+/* ======================BOXES=================== */
+
+section {
+  /* Flexbox stuff */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  margin-top: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.boxrow {
+  width: 70%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+
+.boxes {
+  padding: 20px;
+}
+
+.box {
+  padding: 15px;
+}
+
+.box img {
+  max-width: 100%;
+  min-width: 250px;
+}
+
+.box li {
+  list-style: none;
+  text-align: center;
+  padding: 5px;
+}
+
+/* ======================= CONTACT PAGE ==============================*/
+
+.contactwrap {
+  font-family: 'Roboto', sans-serif;
+  padding: 75px;
+}
+
+.contactbox {
+  background: #c7c5bf;
+  padding: 30px;
+  border-radius: 10px;
+  min-width: 300px;
+  color: #ffffff;
+}
+.contactbox h1 {
+  padding-bottom: 15px;
+}
+.contactbox li {
+  padding: 4px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.contactbox p {
+  margin-left: 20px;
+}
+
+.contactbox img {
+  width: 50px;
+}
+
+/* ==== Link OVERIDES =====*/
+
+.contactbox a:hover {
+  color: yellow;
+}
+
+.contactbox a {
+  color: #ffffff;
+}
+
+.right {
+  padding: 50px;
+  max-width: 100%;
+}
+.right p {
+  padding: 10px;
+}
+/* ======================= FOOTER CSS ================================ */
+
+footer {
+  padding: 10px;
+  color: #000000;
+  background-color: #ffffff;
+  text-align: center;
+  border-top: #000000 2px solid;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  width: 100%;
+}
+
+footer div img {
+  width: 30px;
+  margin: 0px 3px 0px 3px;
+}
+
+.fdiv3 {
+  min-width: 59px;
+}
