@@ -1,15 +1,6 @@
 # KLM
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=Site, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Document</title>
-  </head>
-  <body>
-    <div>
+<div>
       <h1>KLM CREATIONS</h1>
     </div>
     Go to site - <a href="https://klmcreations.netlify.com/">KLM Creations</a>
@@ -42,5 +33,3 @@
       </p>
       <p>Improved upon design and presentation on the landing page to better engage viewers.</p>
     </div>
-  </body>
-</html>
