@@ -1,7 +1,7 @@
 # KLM
-  Go to site - <a href="https://klmcreations.netlify.com/">KLM Creations</a>
+  Live Site - <a href="https://klmcreations.netlify.com/">KLM Creations</a>
 
-   </a><h4><a href="https://klmcreations.netlify.com/"><img src="https://klmcreations.netlify.com/img/KLMscreenshot.png" /></a> 
+   <a href="https://klmcreations.netlify.com/"><img src="https://klmcreations.netlify.com/img/KLMscreenshot.png" /></a> 
   
    <p>Web site Written using HTML and CSS in vs code</p>
       <p>Objectives learnt about</p>
@@ -19,7 +19,7 @@
         I feel i have made good improvements in the layout, design and execution of this site compared to my previous attempts.
       </p>
       <p>
-        I have been able to consider the mobile aspects more thouragly and improve upon the work i was doing and have a better
+        I have been able to consider the mobile aspects and improve upon the work i was doing and have a better
         understanding of the reasons behind the code needed for mobile web development.
       </p>
       <p>Improved upon design and presentation on the landing page to better engage viewers.</p>
